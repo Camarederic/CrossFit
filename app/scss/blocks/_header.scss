@@ -5,6 +5,7 @@
   column-gap: 20px;
   height: 90px;
   padding-inline: 32px;
+  background-color: var(--color-dark-alternate);
   &__logo {
     flex-shrink: 0;
   }
@@ -48,7 +49,7 @@
     color: var(--color-light);
     background-color: transparent;
     border: var(--border);
-    border-radius: var(--border-radius);
+    border-radius: 50%;
   }
   &__burger-button:hover {
     color: var(--color-light-gray);
@@ -62,6 +63,8 @@
     box-shadow: 16px 0 0 currentColor;
   }
 }
+
+
 
 @media (max-width: 1024px) {
   .header {
