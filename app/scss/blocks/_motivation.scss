@@ -1,0 +1,72 @@
+.motivation {
+  &__item {
+  }
+  &__item:nth-child(even) {
+    background-color: var(--color-dark-alternate);
+  }
+  &__item:nth-child(even) .motivation__card {
+    flex-direction: row-reverse;
+  }
+  &__card {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: clamp(30px, 10.42vw, 200px);
+  }
+  &__card-title:not(:last-child) {
+    margin-bottom: 14px;
+  }
+  &__card-description:not(:last-child) {
+    margin-bottom: 37px;
+  }
+  &__card-image {
+    margin-block: -60px;
+  }
+  &__card-body {
+    padding-left: 35px;
+  }
+  &__card-description {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 1919px) {
+  .motivation {
+    &__card-image {
+      margin-block: -20px;
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .motivation {
+    &__card {
+      padding-block: 50px;
+    }
+    &__card-image {
+      margin-block: -20px;
+      max-width: 30%;
+      height: auto;
+      margin-block: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .motivation {
+    &__card {
+      flex-direction: column-reverse;
+      padding-block: 30px;
+      row-gap: 30px;
+    }
+    &__item:nth-child(even) .motivation__card {
+      flex-direction: column-reverse;
+    }
+    &__card-image {
+      max-width: 60%;
+    }
+    &__card-description:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
