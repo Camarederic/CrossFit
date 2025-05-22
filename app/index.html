@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
-      <a class="header__logo" href="/">
+    <header class="header" aria-label="header">
+      <a class="header__logo" href="/" aria-label="header logo">
         <img
           class="header__logo-image"
           src="images/logo.png"
@@ -18,32 +18,52 @@
           loading="lazy"
         />
       </a>
-      <nav class="header__menu">
-        <ul class="header__menu-list">
+      <nav class="header__menu" aria-label="header menu">
+        <ul class="header__menu-list" aria-label="header menu list">
           <li class="header__menu-item">
-            <a class="header__menu-link header__menu-link--active" href="/"
+            <a
+              class="header__menu-link header__menu-link--active"
+              href="/"
+              aria-label="link to home"
               >Home</a
             >
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="/">Pages</a>
+            <a class="header__menu-link" href="/" aria-label="link to pages"
+              >Pages</a
+            >
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="/">Portfolio</a>
+            <a class="header__menu-link" href="/" aria-label="link to portfolio"
+              >Portfolio</a
+            >
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="/">Blog</a>
+            <a class="header__menu-link" href="/" aria-label="link to blog"
+              >Blog</a
+            >
           </li>
           <li class="header__menu-item">
-            <a class="header__menu-link" href="/">Shop</a>
+            <a class="header__menu-link" href="/" aria-label="link to shop"
+              >Shop</a
+            >
           </li>
         </ul>
       </nav>
       <div class="header__actions">
-        <button class="header__book-button button" type="button">
+        <button
+          class="header__book-button button"
+          type="button"
+          aria-label="header button"
+        >
           Book now
         </button>
-        <button class="header__burger-button" type="button" title="Open menu">
+        <button
+          class="header__burger-button"
+          type="button"
+          title="Open menu"
+          aria-label="header burger button"
+        >
           <span class="visually-hidden">Open menu</span>
           <span class="header__burger-button-line"></span>
           <span class="header__burger-button-line"></span>
@@ -51,6 +71,46 @@
         </button>
       </div>
     </header>
+
+    <main class="content">
+      <h1 class="visually-hidden">Kropp Fitness Club</h1>
+      <section class="banner">
+        <h2 class="visually-hidden">Upcoming events</h2>
+        <div class="banner__body">
+          <div class="banner__info" aria-label="banner info">
+            New event <br />
+            coming up / <time datetime="06-07">june 7</time>&nbsp;-&nbsp;
+            <time datetime="06-13">13</time>
+          </div>
+          <h3 class="banner__title" aria-label="banner title">crossfit</h3>
+        </div>
+        <div class="banner__pagination">
+          <ul class="banner__pagination-list">
+            <li class="banner__pagination-item">
+              <button
+                class="banner__pagination-button"
+                type="button"
+                aria-label="banner pagination button"
+              ></button>
+            </li>
+            <li class="banner__pagination-item">
+              <button
+                class="banner__pagination-button"
+                type="button"
+                aria-label="banner pagination button"
+              ></button>
+            </li>
+            <li class="banner__pagination-item">
+              <button
+                class="banner__pagination-button banner__pagination-button--active"
+                type="button"
+                aria-label="banner pagination button"
+              ></button>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
