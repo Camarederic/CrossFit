@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
-  height: 90px;
+  min-height: var(--header-height);
   padding-inline: 32px;
   background-color: var(--color-dark-alternate);
   &__logo {
@@ -15,6 +15,7 @@
     column-gap: 50px;
   }
   &__menu-link {
+    height: var(--header-height);
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
@@ -63,8 +64,6 @@
     box-shadow: 16px 0 0 currentColor;
   }
 }
-
-
 
 @media (max-width: 1024px) {
   .header {
